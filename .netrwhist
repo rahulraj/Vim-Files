@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/rahulraj/.xmonad'
 let g:netrw_dirhist_2='/home/rahulraj/Documents/Java'
 let g:netrw_dirhist_3='/home/rahulraj/Documents/6.006/CodingPart2'
 let g:netrw_dirhist_4='/home/rahulraj/.ipython'
 let g:netrw_dirhist_5='/home/rahulraj/.config'
 let g:netrw_dirhist_6='/home/rahulraj/.vim'
+let g:netrw_dirhist_7='/home/rahulraj/.vim/bundle'
