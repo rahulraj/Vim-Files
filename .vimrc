@@ -74,7 +74,7 @@ nnoremap <leader>w <C-w>v<C-w>l
 set autoread
 
 " Reload vimrc upon change
-autocmd! bufwritepost vimrc source ~/_vimrc
+autocmd! bufwritepost vimrc source ~/.vimrc
 
 " Macros redrawn lazily
 "set lazyredraw
