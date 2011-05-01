@@ -42,6 +42,9 @@ autocmd filetype ruby set ts=2|set sw=2|set expandtab|set sts=2
 colorscheme molokai
 filetype plugin indent on
 
+" Buffers
+set hidden
+
 " Backup files are Git's job!
 set nobackup
 set noswapfile
@@ -109,10 +112,23 @@ set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 
+" ConqueTerm plugin
+" Keep updating buffer even if not in focus
+let g:ConqueTerm_ReadUnfocused = 1
+" Use C-w to leave the buffer even if in insert mode
+let g:ConqueTerm_CWInsert = 0
+
+"AutoComplPopup plugin
+let g:acp_behaviorSnipmateLength = 1
+
 " Plugins and function keys
 map <F3> :NERDTreeToggle<CR><CR>
 map <F4> :TlistToggle<CR><CR>
 map <F5> :YRShow<CR>
+map <F6> :ConqueTermSplit bash<CR>
+
+" jsim.vim
+autocmd FileType jsim let tlist_jsim_settings = 'jsim;s:Subcircuits;p:Plots;x:Instantiations' | TlistOpen | wincmd l
 
 " Python settings
 setlocal smarttab
