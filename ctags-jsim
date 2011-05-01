@@ -1,0 +1,12 @@
+ADD THE FOLLOWING LINE TO ~/.vimrc
+
+autocmd Filetype jsim let tlist_jsim_settings = 'jsim;s:Subcircuits;p:Plots;x:Instantiations' | TlistOpen | wincmd l
+
+
+ADD THE FOLLOWING 5 LINES TO ~/.ctags
+
+--langdef=jsim
+--langmap=jsim:.jsim
+--regex-jsim=/^\.subckt[ \t]+([^ \t]+)[ \t]+(.*)/\1: \2/s,Subcircuits/
+--regex-jsim=/^\.plot[ \t]+(.+)/\1/p,Plots/
+--regex-jsim=/^[^ \t]*X([^ \t]+)[ \t]+(.+)[ \t]+([^ \t]+)/\1[\3]: \2/x,Instantiations/

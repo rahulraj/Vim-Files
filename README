@@ -1,0 +1,41 @@
+JSim bindings for VIM and Exuberant Ctags
+-----------------------------------------
+http://jwcxz.com/projects/vim/jsim
+Distributed under the MIT License
+
+Joe Colosimo < http://jwcxz.com >
+
+In this package, you will find two tools for working with JSim files in VIM:
+	A) language definition for Exuberant Ctags
+	B) syntax file with support for commonly used statements
+
+INSTALLATION
+	1.  Extract this archive into your .vim directory.  It will add the files:
+			LICENSE
+			README
+			ctags-jsim
+			.ftdetect/jsim.vim
+			.syntax/jsim.vim
+	
+	2.  If you want Ctags support, perform the two operations listed in the file
+	    ctags-jsim.  You also need taglist.vim, available at:
+			http://www.vim.org/scripts/script.php?script_id=273
+
+	3.  You may now remove this file (README) and ctags-jsim
+
+	4.  Open a JSim file in VIM.  Some syntax (like .plot, .connect, .subckt, 
+	    X*, and the ports in definitions and instantiations) should be colored.
+	    If you installed Ctags support, TagList will open up and show you 
+	    subcircuits, plots, and instantiations.
+
+TODO
+	- The regex for some of the syntax matching is really long and ugly (and in
+	  one case, just plain ridiculous).  This might be slow for older systems. 
+	  The syntax matching needs to be refined quite a bit and expanded as well 
+	  to support multiline statements and more keywords.
+
+	- It would also be nice to be able to see the difference between input and 
+	  output ports.  Perhaps it would be possible to do this by asking the user
+	  to use tabs between the input and output ports and match that way.
+
+	- There are no bugs at all.  Nope.  None.
