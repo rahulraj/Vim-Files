@@ -127,9 +127,6 @@ map <F4> :TlistToggle<CR><CR>
 map <F5> :YRShow<CR>
 map <F6> :ConqueTermSplit bash<CR>
 
-" jsim.vim
-autocmd FileType jsim let tlist_jsim_settings = 'jsim;s:Subcircuits;p:Plots;x:Instantiations' | TlistOpen | wincmd l
-
 " Python settings
 setlocal smarttab
 setlocal formatoptions=croql
